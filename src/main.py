@@ -7,9 +7,15 @@ rhs = float(rhs)
 
 
 def operate(lhs: float, rhs: float, operand: str):
+    if operand == "+":
+        return lhs + rhs
+      
     if operand == "-":
         return lhs - rhs
-
+      
+    if operand == "*":
+        return lhs * rhs
+      
     return "Operación inválida"
 
 
