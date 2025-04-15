@@ -7,9 +7,11 @@ rhs = float(rhs)
 
 
 def operate(lhs: float, rhs: float, operand: str):
+    if operand == "/":
+        return lhs / rhs
     return "Operación inválida"
 
 
 result = operate(lhs, rhs, operand)
 print(result)
-
+   
